@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dagmara Krenich</title> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e5b2965b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">Dagmara Krenich</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li> <!--do zmiany. link text-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science and Intelligent Systems Student</p>
+            <h1>Hi! I'm <span>Dagmara</span>, a Passionate AI Explorer, Game-Maker, SQL Lover.<br>
+                Running on High Hopes, 3.0 and two Espresso Doppios ! </h1>
+        </div>
+    </div>
+
+</div>
+
+<!-- ------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/4.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Computer Science and Intelligent Systems student at AGH, specializing in Artificial Intelligence.
+                    I love exploring the world of AI, analyzing data, and optimizing algorithms.
+                    I have experience working with SQL, C++, C, Python, and Java, as well as building web applications.
+                    Currently, I am learning C# and Unity.
+                    In my free time, I expand my skills in game development, experiment with neural networks, dance, crochet,
+                    and spend time with my Chihuahua.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C,C++,Java,C#,Python</li>
+                            <li><span>SQL</span><br>Data Analysis in PostreSql</li>
+                            <li><span>Git-</span><br>-Hub, -Lab, -Bash</li>
+                            <li><span>Machine Learning</span><br>With Scikit-Learn and TensorFlow</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2023 Math Tutor</span><br>Preparing High-School Students for exams.</li>
+                            <li><span>2021-2024 LuxMed Data Assistant</span><br>Managing Patient data from 4NET into Databases and Excel.</li>
+                            <li><span>2024 - August volunteering - Robotics Teacher</span><br>Conducted robotics and programming classes for 
+                            children 9-12 y/o.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Present</span><br>AGH University of Science and Technology</li>
+                            <li><span>2023-Present</span><br>Member of AI-LAB Student Research Group</li>
+                            <li><span>2024-Present</span><br>Member of Astro-Devs Student Research Group</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development</h2>
+                <p>I create games using C++ and am currently learning C# with Unity. 
+                    I’m also interested in experimenting with game development in Python. 
+                    Additionally, I build game engines.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web & App Development</h2>
+                <p>  In my spare time, I create websites and develop applications, both backend and frontend. 
+                    I enjoy building projects with real-life use cases, such as database management systems, authentication 
+                    systems (e.g., bank login pages), and other interactive applications.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Other Interactive Programs</h2>
+                <p>Various unfinished projects I'm currently working on.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------portfolio--------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Nazwa aplikacji 1</h3>
+                    <p>Opis aplikacji 1</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a> <!-- link do aplikacji 1 -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Nazwa aplikacji 2</h3>
+                    <p>Opis aplikacji 2</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a> <!-- link do aplikacji 2 -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Nazwa aplikacji 3</h3>
+                    <p>Opis aplikacji 3</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a> <!-- link do aplikacji 3 -->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+<!-- ----------contact--------- -->
+ <div id="contact">
+    <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me!</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>daga.krenich@gmail.com, dkrenich@student.agh.edu.pl</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+48 501 485 210</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/dagmaraa.krenich/"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </div>
+                <a href="images/AI-UcvDagmaraKrenich.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <h2>Mini Game made in Java Script</h2>
+                <canvas id="gameCanvas"></canvas>
+                <button id="startGameButton" class="btn">Start Game</button>
+            </div>
+          </div>
+    </div>
+    <div class="copyright">
+        <p>Made with the help of <i class="fa-solid fa-globe"></i>GreatStack</p>
+    </div>
+ </div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+         sidemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+        const startButton = document.getElementById("startGameButton");
+
+        canvas.width = 400;
+        canvas.height = 500;
+
+        const gridSize = 20;
+        let snake = [{ x: 10, y: 10 }];
+        let direction = "RIGHT";
+        let food = { x: 5, y: 5 };
+        let gameInterval;
+
+        function draw() {
+            ctx.fillStyle = "black";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "pink";
+            ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
+
+            ctx.fillStyle = "darkred";
+            snake.forEach((segment) => {
+                ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
+            });
+        }
+
+        function move() {
+            let head = { ...snake[0] };
+
+            switch (direction) {
+                case "UP": head.y -= 1; break;
+                case "DOWN": head.y += 1; break;
+                case "LEFT": head.x -= 1; break;
+                case "RIGHT": head.x += 1; break;
+            }
+
+            if (head.x === food.x && head.y === food.y) {
+                food = {
+                    x: Math.floor(Math.random() * (canvas.width / gridSize)),
+                    y: Math.floor(Math.random() * (canvas.height / gridSize))
+                };
+            } else {
+                snake.pop();
+            }
+
+            if (head.x < 0 || head.x >= canvas.width / gridSize || head.y < 0 || head.y >= canvas.height / gridSize ||
+                snake.some(segment => segment.x === head.x && segment.y === head.y)) {
+                clearInterval(gameInterval);
+                alert("Game Over!");
+                return;
+            }
+
+            snake.unshift(head);
+            draw();
+        }
+
+        function changeDirection(event) {
+            const keyMap = { ArrowUp: "UP", ArrowDown: "DOWN", ArrowLeft: "LEFT", ArrowRight: "RIGHT" };
+            if (keyMap[event.key]) {
+                event.preventDefault(); // Blokuje przewijanie strony
+                if (!(keyMap[event.key] === "UP" && direction === "DOWN") &&
+                    !(keyMap[event.key] === "DOWN" && direction === "UP") &&
+                    !(keyMap[event.key] === "LEFT" && direction === "RIGHT") &&
+                    !(keyMap[event.key] === "RIGHT" && direction === "LEFT")) {
+                    direction = keyMap[event.key];
+                }
+            }   
+        }
+
+        function startGame() {
+            snake = [{ x: 10, y: 10 }];
+            direction = "RIGHT";
+            food = { x: 5, y: 5 };
+            clearInterval(gameInterval);
+            gameInterval = setInterval(move, 100);
+            document.addEventListener("keydown", changeDirection);
+        }
+
+        startButton.addEventListener("click", startGame);
+    });
+
+
+</script>
+
+</body>
+</html>
