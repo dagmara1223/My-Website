@@ -1,5 +1,5 @@
 # My-Website
-Still in the progress :)
+Still in progress :)
 
 My Web is the place where I will add my Projects, Apps and Scripts. You can find mini-game in the Contact Section. I am trying to improve it and add new functions every day!.
 *Game works like this:* 
